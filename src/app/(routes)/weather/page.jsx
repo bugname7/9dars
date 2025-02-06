@@ -16,7 +16,7 @@ export default function Weather() {
                 `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myApi}&units=metric`
             );
             if (!res.ok) {
-                throw new Error("Shahar topilmadi yoki boshqa xato!");
+                throw new Error("boshqa shahar kitiring");
             }
             const data = await res.json();
             setWeather(data);
